@@ -38,9 +38,9 @@ class Deck:
     def shuffle():
         self.mazo=rand.shuffle(self.mazo)
         return self.mazo
-    def deal(n: int):
+    def deal(self,n: int):
         cartas=[]
-        for x in range n:
+        for x in range(n):
             card=self.mazo.pop()
             cartas.append(card)
         return cartas
@@ -68,4 +68,5 @@ def CrearMazo():
 
 
         
+
 
